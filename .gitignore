@@ -359,3 +359,5 @@ build_*/
 
 # Clangd cache
 .clangd/
+/Examples/StereoKitTest/Demos/IdeaGen/APIKey.txt
+/GPTIdeaGen/APIKey.txt

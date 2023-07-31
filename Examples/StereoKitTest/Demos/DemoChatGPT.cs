@@ -19,7 +19,7 @@ class WindowInfo
         WindowText = $"Updated text for {WindowName} at {DateTime.Now}";
     }
 
-    public void Show()
+    public void Update()
     {
         UI.WindowBegin(WindowName, ref WindowPose);
         UI.Label(WindowText);
@@ -46,20 +46,9 @@ class DemoChatGPT : ITest
 
     public void Update()
     {
-        window1.Show();
-        window2.Show();
+        window1.Update();
+        window2.Update();
     }
 
     public void Shutdown() { }
-
-    // Methods to retrieve window text, if needed
-    public string GetWindowText1()
-    {
-        return window1.WindowText;
-    }
-
-    public string GetWindowText2()
-    {
-        return window2.WindowText;
-    }
 }
